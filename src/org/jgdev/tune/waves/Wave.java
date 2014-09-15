@@ -1,6 +1,6 @@
 package org.jgdev.tune.waves;
 
 public interface Wave {
-	public byte[] getSamples();
-	public int getSample(double freq, long t);
+	public byte[] getSamples(int n);
+	public byte getSample(float freq, long millis);
 }

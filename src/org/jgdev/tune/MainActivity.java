@@ -7,6 +7,7 @@ public abstract class MainActivity
 		//TODO: define a file format for chiptunes
 		//TODO: write a chiptune file interpreter
 		//TODO: consider a visualizer in a separate repo?
+		//TODO: don't forget the Arduino port, and make it Uno+MEGA compatible!
 	}
 
 }

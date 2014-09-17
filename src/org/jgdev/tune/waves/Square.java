@@ -7,10 +7,10 @@ public class Square implements Wave {
 		byte[] samples = new byte[n];
 		
 		for(int t=0; t<n; t++) {
-			float x = t/n;
+			float x = (float)(t)/n;
 			
 			float y = (float) (1 - Math.floor(x*2) % 2);
-			samples[t] = (byte) (Math.round(y*127) - 255);
+			samples[t] = (byte) (Math.round(y*255) - 128);
 		}
 		
 		return samples;

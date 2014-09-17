@@ -7,10 +7,10 @@ public class Sine implements Wave {
 		byte[] samples = new byte[n];
 		
 		for(int t=0; t<n; t++) {
-			float x = t/n;
+			float x = (float)(t)/n;
 			
 			float y = (float) Math.sin(x * Math.PI * 2);
-			samples[t] = (byte) (Math.round(y/2f + 0.5f)*127 - 255);
+			samples[t] = (byte) Math.round((y/2f + 0.5f)*255 - 128);
 		}
 		
 		return samples;

@@ -1,7 +1,7 @@
 jgTune
 ======
 
-A library that generates 8bit-deep audio samples for different waveforms used in chiptunes.
+A library that generates 8bit (signed) audio samples for different waveforms used in chiptunes.
 
 **How to use:**
 Copy _'src/jgdev/tunes/waves'_ to your project.

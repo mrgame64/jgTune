@@ -21,9 +21,8 @@ public class Square implements Wave {
 		if(millis > 1000) millis -= 1000;
 		
 		float x = millis/1000f;
-		
 		float y = (float) (1 - Math.floor(x*2*freq) % 2);
-		return (byte) (Math.round(y*127) - 255);
+		return (byte) (Math.round(y*255) - 128);
 	}
 
 }

@@ -22,7 +22,7 @@ public class Sine implements Wave {
 		
 		float x = millis/1000f;
 		float y = (float) Math.sin(x * Math.PI * 2 * freq);
-		return (byte) (Math.round(y/2f + 0.5f)*127 - 255);
+		return (byte) (Math.round(y/2f + 0.5f)*255 - 128);
 	}
 
 }

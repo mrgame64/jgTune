@@ -19,7 +19,7 @@ public class Sine implements Wave {
 
 	@Override
 	public byte getSample(float freq, float sec) {
-		float x = sec % (1f + Float.MIN_NORMAL);
+		float x = sec % 1;
 		float y = (float) Math.sin(x * Math.PI * 2 * freq);
 		return (byte) (Math.round(y/2f + 0.5f)*255 - 128);
 	}
